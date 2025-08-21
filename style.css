@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --primary-color: #5893df;
+    --secondary-color: rgb(196, 191, 191);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--primary-color);
+    font: bold 2rem 'Open Sans', sans-serif
+}
+
+.todo{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.todo_title{
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 3px 3px 5px #333;
+    font-size: 3rem;
+    color: #000;
+    border-radius: 15px;
+}
+
+.listas{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.todo_list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo_item{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.todo_item > div {
+    width: 80%;
+}
+
+.todo_item:hover{
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: #2e2c2c;
+    color: #FFF;
+}
+
+.todo_item > input[type='button'], /* ">" => "Filho direto" */
+.todo_item > input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+    font: inherit; /* Herda caracteristicas do pai */
+}
+
+.todo_item > input[type='checkbox']:checked + div{
+    text-decoration: line-through;
+    /* Deixa um risco no texto ao marcar a caixinha */
+}
+
+.todo_new-item{
+    display: flex;
+    background-color: #d4e3f0;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-shadow: 1px 1px 5px #333;
+    margin: 10px auto;
+    font: inherit;
+}
+
+.todo_new-item > input{
+    background-color: #d4e3f0;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
+.todo_new-item > input::placeholder{
+    font-style: italic;
+    font-weight: normal;
+}
