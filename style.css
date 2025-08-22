@@ -123,14 +123,17 @@ body{
 
 @media (max-width: 576px){
     .todo{
-    width: 80vw;
+    width: 95vw;
     margin: 0 auto;
+    }
+
+    .todo_list{
+    max-height: 200vw;
     }
 }
 
-@media (max-width: 756px){
+@media (min-width:576px) and (max-width: 756px){
     .todo{
-    width: 70vw;
-    margin: 0 auto;
+    width: 95vw;
     }
 }
