@@ -119,3 +119,18 @@ body{
     font-style: italic;
     font-weight: normal;
 }
+
+
+@media (max-width: 576px){
+    .todo{
+    width: 80vw;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width: 756px){
+    .todo{
+    width: 70vw;
+    margin: 0 auto;
+    }
+}
