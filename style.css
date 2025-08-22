@@ -60,6 +60,7 @@ body{
     width: 100%;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .todo_item{
@@ -71,6 +72,14 @@ body{
     padding: 5px;
     box-shadow: 1px 1px 5px #333;
 }
+
+.todo_item div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  position: relative;
+}
+
 
 .todo_item > div {
     width: 80%;
@@ -127,9 +136,6 @@ body{
     margin: 0 auto;
     }
 
-    .todo_list{
-    max-height: 200vw;
-    }
 }
 
 @media (min-width:576px) and (max-width: 756px){
